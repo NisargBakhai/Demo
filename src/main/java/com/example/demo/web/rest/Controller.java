@@ -11,7 +11,8 @@ public class Controller {
 
     @GetMapping("/test")
     ResponseEntity<String> testFunction(){
-        return ResponseEntity.ok().body("Hello from Nisarg!");
+        return ResponseEntity.ok().body("Hello from Nisarg again!");
+        
     }
 
 
