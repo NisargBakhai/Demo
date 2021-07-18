@@ -5,10 +5,8 @@ phases:
     commands:
       - echo Entered the build phase...
       - mvn clean package
+      - java -jar target/demo-0.0.1-SNAPSHOT.jar
   post_build:
     commands:
       - echo Build completed successfully
-artifacts:
-  files:
-    - target/demo-0.0.1-SNAPSHOT.jar
-  discard-paths: yes
+
